@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interval Trainer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="game">
+        <h1>🎵 Interval Trainer</h1>
+
+        <div id="hud">
+            <p id="levelText">Level 1</p>
+            <p id="scoreText">Correct: 0 / 10</p>
+            <p id="errorText">Errors: 0 / 3</p>
+            <label>
+                <input type="checkbox" id="randomPitchToggle" />
+                Random Root
+            </label>
+        </div>
+
+        <div id="buttonsContainer" class="intervals">
+            <button id="btnOctave">Octave</button>
+            <button id="btnMajorSeventh">Major Seventh</button>
+            <button id="btnMinorSeventh">Minor Seventh</button>
+            <button id="btnMajorSixth">Major Sixth</button>
+            <button id="btnMinorSixth">Minor Sixth</button>
+            <button id="btnPerfectFifth">Perfect Fifth</button>
+            <button id="btnTritone">Tritone</button>
+            <button id="btnPerfectFourth">Perfect Fourth</button>
+            <button id="btnMajorThird">Major Third</button>
+            <button id="btnMinorThird">Minor Third</button>
+            <button id="btnMajorSecond">Major Second</button>
+            <button id="btnMinorSecond">Minor Second</button>
+        </div>
+
+
+        <button id="playButton">▶ Play Interval</button>
+
+        <div id="endScreen" class="hidden">
+            <h2 id="endTitle"></h2>
+            <p id="endMessage"></p>
+            <button id="restartButton">Restart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
