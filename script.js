@@ -166,10 +166,14 @@ function playIntervalSound(intervalName) {
 function onAnswer(selected, btn) {
     if (selected === currentCorrectInterval) {
         correctCount++;
+        // ✅ Correct feedback (green flash)
+        btn.classList.add("correct");
+        setTimeout(() => btn.classList.remove("correct"), 500);
     } else {
         errorCount++;
+        // ❌ Wrong feedback (red flash)
         btn.classList.add("wrong");
-        setTimeout(() => btn.classList.remove("wrong"), 400);
+        setTimeout(() => btn.classList.remove("wrong"), 500);
     }
 
     if (correctCount >= 10) {
