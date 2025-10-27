@@ -12,8 +12,8 @@ body {
 }
 
 #game {
-    width: 90%;
-    max-width: 400px;
+    width: 95%;
+    max-width: 450px;
     text-align: center;
 }
 
@@ -22,16 +22,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     margin-bottom: 20px;
 }
 
 #levelText,
 #scoreText,
 #errorText {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    color: white;
 }
 
 /* Play button */
@@ -41,8 +40,8 @@ body {
     justify-content: center;
     gap: 8px;
     margin: 20px 0;
-    padding: 10px 18px;
-    font-size: 1rem;
+    padding: 12px 20px;
+    font-size: 1.1rem;
     font-weight: bold;
     color: white;
     background-color: #222;
@@ -73,7 +72,7 @@ body {
 #keyboard {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 5px;
     position: relative;
     width: 100%;
 }
@@ -83,7 +82,7 @@ body {
     background: #fff;
     color: #000;
     border: 1px solid #999;
-    height: 40px;
+    height: 48px;
     width: 100%;
     border-radius: 4px;
     text-align: right;
@@ -104,7 +103,7 @@ body {
     background: #000;
     color: #fff;
     border-radius: 4px;
-    height: 40px;
+    height: 48px;
     width: 100%;
     text-align: right;
     padding-right: 10px;
@@ -126,7 +125,7 @@ body {
     cursor: default;
 }
 
-/* Feedback states */
+/* Correct / wrong feedback */
 .key.correct {
     background-color: #4CAF50 !important;
     color: #fff !important;
@@ -149,22 +148,21 @@ body {
     margin-top: 20px;
 }
 
-/* ✅ Responsive Design */
+/* ✅ Responsive adjustments */
 @media (max-width: 768px) {
     #game {
-        width: 95%;
-        max-width: 350px;
+        max-width: 380px;
     }
 
     #playButton {
-        padding: 8px 14px;
-        font-size: 0.9rem;
+        padding: 12px 18px;
+        font-size: 1rem;
     }
 
     .key.white,
     .key.black {
-        height: 36px;
-        font-size: 0.9rem;
+        height: 46px;
+        font-size: 1rem;
     }
 }
 
@@ -177,23 +175,23 @@ body {
 
     #game {
         width: 100%;
-        max-width: 300px;
+        max-width: 360px;
     }
 
     #playButton {
-        font-size: 0.85rem;
-        padding: 8px 12px;
+        font-size: 1rem;
+        padding: 12px 16px;
     }
 
     .key.white,
     .key.black {
-        height: 32px;
-        font-size: 0.85rem;
+        height: 45px;
+        font-size: 1rem;
     }
 
     #levelText,
     #scoreText,
     #errorText {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
