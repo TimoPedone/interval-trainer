@@ -13,8 +13,12 @@ body {
 
 #game {
     width: 95%;
-    max-width: 450px;
+    max-width: 480px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
 }
 
 /* HUD */
@@ -23,13 +27,13 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #levelText,
 #scoreText,
 #errorText {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -39,9 +43,9 @@ body {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    margin: 20px 0;
-    padding: 12px 20px;
-    font-size: 1.1rem;
+    margin: 15px 0;
+    padding: 14px 22px;
+    font-size: 1.2rem;
     font-weight: bold;
     color: white;
     background-color: #222;
@@ -50,7 +54,6 @@ body {
     cursor: pointer;
     transition: all 0.2s;
     width: auto;
-    max-width: 90%;
 }
 
 #playButton:hover {
@@ -75,6 +78,8 @@ body {
     gap: 5px;
     position: relative;
     width: 100%;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 /* White keys */
@@ -82,12 +87,14 @@ body {
     background: #fff;
     color: #000;
     border: 1px solid #999;
-    height: 48px;
+    height: 6.5vh;
+    /* adaptive height */
     width: 100%;
     border-radius: 4px;
     text-align: right;
     padding-right: 10px;
     font-weight: bold;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: transform 0.1s ease, background-color 0.3s;
 }
@@ -103,12 +110,13 @@ body {
     background: #000;
     color: #fff;
     border-radius: 4px;
-    height: 48px;
+    height: 6.5vh;
+    /* match white keys */
     width: 100%;
     text-align: right;
     padding-right: 10px;
-    cursor: pointer;
     font-weight: bold;
+    cursor: pointer;
     transition: transform 0.1s ease, background-color 0.3s;
 }
 
@@ -151,18 +159,18 @@ body {
 /* ✅ Responsive adjustments */
 @media (max-width: 768px) {
     #game {
-        max-width: 380px;
+        max-width: 420px;
     }
 
     #playButton {
-        padding: 12px 18px;
-        font-size: 1rem;
+        padding: 14px 20px;
+        font-size: 1.1rem;
     }
 
     .key.white,
     .key.black {
-        height: 46px;
-        font-size: 1rem;
+        font-size: 1.1rem;
+        height: 7vh;
     }
 }
 
@@ -170,28 +178,35 @@ body {
     body {
         flex-direction: column;
         justify-content: flex-start;
-        padding-top: 20px;
+        padding-top: 10px;
     }
 
     #game {
         width: 100%;
-        max-width: 360px;
+        height: 92vh;
+        max-width: 380px;
+    }
+
+    #hud {
+        gap: 6px;
+        margin-bottom: 10px;
     }
 
     #playButton {
-        font-size: 1rem;
-        padding: 12px 16px;
+        font-size: 1.1rem;
+        padding: 14px 18px;
     }
 
     .key.white,
     .key.black {
-        height: 45px;
-        font-size: 1rem;
+        height: 7.2vh;
+        /* fills screen vertically */
+        font-size: 1.1rem;
     }
 
     #levelText,
     #scoreText,
     #errorText {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
