@@ -6,6 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    /* Ensures body takes full viewport height */
     margin: 0;
     padding: 10px;
     box-sizing: border-box;
@@ -152,6 +153,7 @@ body {
 @media (max-width: 768px) {
     #game {
         width: 100%;
+        max-width: 540px;
     }
 
     #playButton {
@@ -175,22 +177,34 @@ body {
 
     #game {
         width: 100%;
+        /* Removed max-width to let it expand as needed on small phones */
+    }
+
+    /* Condensed vertical spacing */
+    #hud {
+        margin-bottom: 10px;
     }
 
     #playButton {
         font-size: 1rem;
         padding: 12px 16px;
+        margin: 10px 0;
+        /* Reduced top/bottom margin */
     }
 
+    /* Reduced size for vertical fit */
     .key.white,
     .key.black {
-        height: 45px;
-        font-size: 1rem;
+        height: 38px;
+        /* Significantly reduced height for better vertical fit */
+        font-size: 0.9rem;
+        /* Slightly smaller font to fit key height */
     }
 
     #levelText,
     #scoreText,
     #errorText {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        /* Reduced font size for HUD */
     }
 }
