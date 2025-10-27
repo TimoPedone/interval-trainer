@@ -152,7 +152,6 @@ body {
 @media (max-width: 768px) {
     #game {
         width: 100%;
-        max-width: 540px;
     }
 
     #playButton {
@@ -176,7 +175,6 @@ body {
 
     #game {
         width: 100%;
-        max-width: 360px;
     }
 
     #playButton {
