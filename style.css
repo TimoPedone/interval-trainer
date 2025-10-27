@@ -151,7 +151,8 @@ body {
 /* ✅ Responsive adjustments */
 @media (max-width: 768px) {
     #game {
-        max-width: 380px;
+        width: 100%;
+        max-width: 540px;
     }
 
     #playButton {
