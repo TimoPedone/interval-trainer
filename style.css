@@ -201,6 +201,7 @@ body {
         /* Slightly smaller font to fit key height */
     }
 
+    #title,
     #levelText,
     #scoreText,
     #errorText {
