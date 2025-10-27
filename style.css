@@ -176,7 +176,7 @@ body {
     }
 
     #game {
-        width: 100%;
+        width: 90%;
         /* Removed max-width to let it expand as needed on small phones */
     }
 
