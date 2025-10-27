@@ -216,7 +216,8 @@ body {
 
     #levelText,
     #scoreText,
-    #errorText {
+    #errorText,
+    #randomPitchToggle {
         font-size: 0.9rem;
         /* Reduced font size for HUD */
     }
